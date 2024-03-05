@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    i
+  </head>
+  <body class="bg-gray-800">
+    <main class="gap-4 grid place-items-center p-4">
+      <h1 class="text-4xl text-white">Guess the number</h1>
+      <div id="buttons">
+        <button
+          class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
+          id="start"
+        >
+          Start
+        </button>
+        <button
+          class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded"
+          id="stop"
+        >
+          Stop
+        </button>
+        <button
+          class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+          id="reset"
+        >
+          Reset
+        </button>
+      </div>
+
+      <div id="game" class="grid grid-cols-1 gap-4">
+        <h2 class="text-2xl text-white">Guess a number between 1 and 100</h2>
+        <input
+          type="number"
+          placeholder="Enter your guess"
+          id="guess"
+          class="text-black w-full p-2 rounded mb-4"
+        />
+        <button
+          class="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 border-b-4 border-purple-700 hover:border-purple-500 rounded"
+          id="submit"
+        >
+          Submit
+        </button>
+        <div
+          id="infos"
+          class="grid grid-cols-1 gap-4 text-white text-center mt-4 p-4 bg-gray-700 rounded border-2 border-gray-800"
+        >
+          <div id="result"></div>
+          <div id="attempts"></div>
+          <div id="guesses"></div>
+          <div id="range"></div>
+          <div id="hint"></div>
+          <div id="feedback"></div>
+          <div id="message"></div>
+          <div id="score"></div>
+          <div id="time"></div>
+          <div id="timer"></div>
+          <div id="end"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/game.js"></script>
+  </body>
+</html>
